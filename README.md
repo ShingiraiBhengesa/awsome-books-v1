@@ -22,12 +22,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Code Editor
-Git
+- Code Editor
+- Git
 
 ### Setup
 
-Clone the repository using git clone or download the folder and run it in your local server
+Clone the repository using   git clone ```https://github.com/ShingiraiBhengesa/Awsome-Books.git``` or download the folder and run it in your local server
 
 
 ## Author
