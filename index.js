@@ -66,11 +66,3 @@ const addBook = (newBook) => {
   displayBooks();
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  addBook(new Book(inputBook.title, inputBook.author));
-  form.submit();
-});
-
-displayBooks();
-populateFields();
