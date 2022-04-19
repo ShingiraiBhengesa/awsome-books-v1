@@ -72,4 +72,3 @@ form.addEventListener('submit', (e) => {
 
 Book.displayBooks();
 populateFields();
-
