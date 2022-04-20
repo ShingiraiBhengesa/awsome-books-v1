@@ -78,7 +78,7 @@ input {
   padding: 0.3rem;
   width: 100%;
   border: 0.125rem #333 solid;
-  border-radius: 0.25rem;
+  border-radius: 0.30rem;
 }
 
 table {
@@ -93,14 +93,14 @@ tr:nth-child(even) {
 .all-books,
 .add-book {
   display: block;
-  width: 90%;
-  max-width: 32rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .list-books {
   border: 0.125rem solid #333;
   border-radius: 0.25rem;
-  max-width: 32rem;
+  max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -120,7 +120,7 @@ tr:nth-child(even) {
 
 .form-input {
   margin: 0 auto;
-  max-width: 26rem;
+  max-width: 40rem;
   box-sizing: border-box;
 }
 
@@ -130,7 +130,7 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 32rem;
+  max-width: 40rem;
 }
 
 .contact > p {
