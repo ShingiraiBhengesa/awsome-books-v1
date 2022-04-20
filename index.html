@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +9,52 @@
 </head>
 
 <body>
-    <h1 class="title-list-books">All awesome books</h1>
-    <div class="list-books">
+    <nav>
+        <div class="nav-title">
+            Awesome Books
+        </div>
+        <div class="nav-list">
+            <ul class="nav-ul">
+                <li class="list-item">List |</li>
+                <li class="list-item">Add New |</li>
+                <li class="list-item">Contact</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="all-books">
+        <h1 class="title-list-books">All awesome books</h1>
+        <div class="list-books">
+        </div>
     </div>
-    <h2 class="title-form-add">Add a new book</h2>
-    <form class="form-input">
-        <ul>
-            <li>
-                <input type="text" name="title" placeholder="Title" required />
-            </li>
-            <li>
-                <input type="text" name="author" placeholder="Author" required />
-            </li>
-            <li>
-                <button type="submit">Add</button>
-            </li>
-        </ul>
-    </form>
+    <div class="add-book hidden">
+        <h2 class="title-form-add">Add a new book</h2>
+        <form class="form-input">
+            <ul>
+                <li>
+                    <input type="text" name="title" placeholder="Title" required />
+                </li>
+                <li>
+                    <input type="text" name="author" placeholder="Author" required />
+                </li>
+                <li>
+                    <button type="submit">Add</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="contact hidden">
+        <h2 class="title-contact">Contact Information</h2>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <div class="contact-details">
+            <span class="contact-list">* Our email: mail@mail.com</span>
+            <span class="contact-list">* Our phone number: 123456789</span>
+            <span class="contact-list">* Our address: Streetname 123 City, Country</span>
+        </div>
+    </div>
+    <footer>
+        <span>Copyright</span>
+    </footer>
     <script src='index.js'></script>
 </body>
 </html>
