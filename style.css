@@ -2,7 +2,13 @@
 
 html,
 body {
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0.2rem;
   margin: 0;
   font-family: 'Quicksand', 'Courier New', Courier, monospace;
   box-sizing: border-box;
@@ -14,11 +20,47 @@ ul {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #333 solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  padding: 0.2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: #278cbb;
+}
+
 li {
   display: flex;
   justify-content: flex-end;
   margin: 0;
   margin-bottom: 1rem;
+}
+
+.contact-details {
+  list-style: circle;
+  margin-top: 2rem;
+}
+
+span {
+  display: block;
 }
 
 button {
@@ -36,7 +78,7 @@ input {
   padding: 0.3rem;
   width: 100%;
   border: 0.125rem #333 solid;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
 }
 
 table {
@@ -48,10 +90,17 @@ tr:nth-child(even) {
   background-color: lightgray;
 }
 
+.all-books,
+.add-book {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+}
+
 .list-books {
   border: 0.125rem solid #333;
   border-radius: 0.25rem;
-  max-width: 32rem;
+  max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -62,31 +111,48 @@ tr:nth-child(even) {
   padding: 0.5rem;
 }
 
-.title-list-books {
+.title-list-books,
+.title-form-add,
+.title-contact {
   text-align: center;
   color: #278cbb;
-}
-
-.title-form-add {
-  text-align: center;
-  color: #278cbb;
-}
-
-.title-form-add::before {
-  content: '';
-  height: 3px;
-  width: 6rem;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  bottom: 2rem;
-  z-index: -1;
-  border-radius: 3px;
-  background: #278cbb;
 }
 
 .form-input {
   margin: 0 auto;
-  max-width: 16rem;
+  max-width: 40rem;
   box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.contact > p {
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.title-contact {
+  margin-bottom: 3rem;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+  border: 2px #333 solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
 }
