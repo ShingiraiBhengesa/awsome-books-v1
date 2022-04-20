@@ -39,7 +39,6 @@ author.addEventListener('change', () => {
   inputBook.author = author.value;
 });
 
-
 const populateFields = () => {
   localStorage.setItem('savedBooks', JSON.stringify(books));
 };
