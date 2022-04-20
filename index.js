@@ -13,31 +13,7 @@ if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
 }
 
-navList.addEventListener('click', () => {
-  allBooks.classList.remove('hidden');
-  addBook.classList.add('hidden');
-  contact.classList.add('hidden');
-});
 
-navAdd.addEventListener('click', () => {
-  addBook.classList.remove('hidden');
-  allBooks.classList.add('hidden');
-  contact.classList.add('hidden');
-});
-
-navContact.addEventListener('click', () => {
-  contact.classList.remove('hidden');
-  allBooks.classList.add('hidden');
-  addBook.classList.add('hidden');
-});
-
-title.addEventListener('change', () => {
-  inputBook.title = title.value;
-});
-
-author.addEventListener('change', () => {
-  inputBook.author = author.value;
-});
 
 const populateFields = () => {
   localStorage.setItem('savedBooks', JSON.stringify(books));
